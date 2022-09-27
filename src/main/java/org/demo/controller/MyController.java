@@ -9,6 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/xyz")
 public class MyController {	
 	
+	@RequestMapping(value="/arul", method=RequestMethod.GET, produces="text/html")
+	public String test1()
+	{
+		System.out.println("In java  "+mname);
+			
+		return "Hi Hello Welcome to SpringBoot ";
+	}
 		
 	@RequestMapping(value="/mnop", method=RequestMethod.GET, produces="text/html")
 	public String test(
